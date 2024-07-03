@@ -1,6 +1,11 @@
-<div class="container">
+<app-barra-principal></app-barra-principal>
+
+<div class="container mt-5 p-2 rounded d-flex justify-content-center align-items-center">
+
     <form [formGroup]="loginForm">
-        <h1>Iniciar Sesión</h1>
+        <div class="conteiner mt-2 text-center">
+            <h1>Iniciar Sesión</h1>
+        </div>
         <div class="form-group mb-3">
             <label for="id_tipo_usuario">Invitar a test:</label>
             <select class="form-control" id="id_tipo_usuario" formControlName="id_tipo_usuario" required>
@@ -18,7 +23,9 @@
             <input type="password" class="form-control" id="contrasenia" placeholder="Consigne su contraseña"
                 formControlName="contrasenia" required>
         </div>
-        <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid"
+            <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid"
             (click)="onSubmit()">Entrar</button>
+        
+
     </form>
 </div>

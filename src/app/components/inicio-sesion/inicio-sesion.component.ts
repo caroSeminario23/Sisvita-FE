@@ -6,11 +6,12 @@ import { FormControl, FormGroup, Validators, ReactiveFormsModule } from '@angula
 import { Tipo_Usuario } from '../../models/tipo_usuario';
 
 import Swal from 'sweetalert2';
+import { BarraPrincipalComponent } from '../barra-principal/barra-principal.component';
 
 @Component({
   selector: 'app-inicio-sesion',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, BarraPrincipalComponent],
   templateUrl: './inicio-sesion.component.html',
   styleUrl: './inicio-sesion.component.css'
 })
